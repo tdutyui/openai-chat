@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ChatApi {
 
     @PostMapping("/request")
-    ChatCompletionResult sendRequest(@RequestBody String request);
+    ChatCompletionResult createChatCompletion(@RequestBody String request);
 }

@@ -12,7 +12,7 @@ public class ChatController implements ChatApi {
     private final ChatService chatService;
     
     @Override
-    public ChatCompletionResult sendRequest(String request) {
+    public ChatCompletionResult createChatCompletion(String request) {
         return chatService.createChatCompletion(request);
     }
 }
