@@ -1,10 +1,10 @@
-package com.example.openai;
+package com.example.openaichat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OpenaiApplicationTests {
+class OpenaiChatApplicationTests {
 
 	@Test
 	void contextLoads() {

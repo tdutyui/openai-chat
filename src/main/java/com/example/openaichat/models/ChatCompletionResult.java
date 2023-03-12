@@ -1,4 +1,4 @@
-package com.example.openai.models;
+package com.example.openaichat.models;
 
 import lombok.Data;
 

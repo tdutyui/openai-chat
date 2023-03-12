@@ -1,6 +1,6 @@
-package com.example.openai.service;
+package com.example.openaichat.service;
 
-import com.example.openai.models.ChatCompletionResult;
+import com.example.openaichat.models.ChatCompletionResult;
 
 public interface ChatService {
     

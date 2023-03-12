@@ -1,6 +1,6 @@
-package com.example.openai.controller;
+package com.example.openaichat.controller;
 
-import com.example.openai.models.ChatCompletionResult;
+import com.example.openaichat.models.ChatCompletionResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,7 +1,7 @@
-package com.example.openai.controller;
+package com.example.openaichat.controller;
 
-import com.example.openai.models.ChatCompletionResult;
-import com.example.openai.service.ChatService;
+import com.example.openaichat.models.ChatCompletionResult;
+import com.example.openaichat.service.ChatService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;
 

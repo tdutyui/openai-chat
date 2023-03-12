@@ -1,10 +1,10 @@
-package com.example.openai.service.impl;
+package com.example.openaichat.service.impl;
 
-import com.example.openai.client.ChatClient;
-import com.example.openai.models.ChatCompletionRequest;
-import com.example.openai.models.ChatCompletionResult;
-import com.example.openai.models.ChatMessage;
-import com.example.openai.service.ChatService;
+import com.example.openaichat.client.ChatClient;
+import com.example.openaichat.models.ChatCompletionRequest;
+import com.example.openaichat.models.ChatCompletionResult;
+import com.example.openaichat.models.ChatMessage;
+import com.example.openaichat.service.ChatService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

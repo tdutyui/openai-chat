@@ -1,4 +1,4 @@
-package com.example.openai.models;
+package com.example.openaichat.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

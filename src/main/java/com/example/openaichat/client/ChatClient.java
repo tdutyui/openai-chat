@@ -1,7 +1,7 @@
-package com.example.openai.client;
+package com.example.openaichat.client;
 
-import com.example.openai.models.ChatCompletionRequest;
-import com.example.openai.models.ChatCompletionResult;
+import com.example.openaichat.models.ChatCompletionRequest;
+import com.example.openaichat.models.ChatCompletionResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
