@@ -2,7 +2,6 @@ package com.example.openaichat.service.impl;
 
 import com.example.openaichat.client.ChatClient;
 import com.example.openaichat.models.ChatCompletionRequest;
-import com.example.openaichat.models.ChatCompletionResult;
 import com.example.openaichat.models.ChatMessage;
 import com.example.openaichat.service.ChatService;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +18,7 @@ public class ChatServiceImpl implements ChatService {
     private static final String TOKEN = System.getenv("OPENAI_TOKEN");
     
     @Override
-    public ChatCompletionResult createChatCompletion(String request) {
+    public String createChatCompletion(String request) {
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest.builder()
                 .model("gpt-3.5-turbo")
                 .messages(List.of(new ChatMessage("user", request)))
@@ -32,6 +31,6 @@ public class ChatServiceImpl implements ChatService {
                 .frequencyPenalty(0.0)
                 .user("user")
                 .build();
-        return chatClient.createChatCompletion(chatCompletionRequest, TOKEN);
+        return chatClient.createChatCompletion(chatCompletionRequest, TOKEN).getChoices().get(0).getMessage().getContent();
     }
 }
